@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -14,3 +15,7 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# Streaming-UI-Plataforma-de-Filmes-com-React
+Aplicação de streaming desenvolvida com React e Vite, com múltiplas páginas (Landing, Login, Planos e área autenticada) e navegação SPA com React Router. Consome API do TMDB para exibir filmes dinamicamente, com componentização, Hooks, Context API, localStorage e layout totalmente responsivo.
+>>>>>>> 891d816675c95566b429176d1188c32d53d4cd6a
