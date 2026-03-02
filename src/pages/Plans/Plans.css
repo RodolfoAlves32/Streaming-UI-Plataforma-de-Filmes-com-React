@@ -1,0 +1,146 @@
+.plans-container {
+    padding: 100px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.plans-header {
+    margin-bottom: 40px;
+}
+
+.plans-header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.plans-benefits {
+    list-style: none;
+    font-size: 1.125rem;
+}
+
+.plans-benefits li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.plans-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.plan-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 30px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(229, 9, 20, 0.2);
+}
+
+.plan-card.selected {
+    border-color: var(--netflix-red);
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #3d2224 0%, #1a1a1a 100%);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--netflix-red);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.plan-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.plan-card h4 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.plan-card h4 span {
+    font-size: 1rem;
+    color: #b3b3b3;
+    font-weight: normal;
+}
+
+.plan-details {
+    border-top: 1px solid #4d4d4d;
+    padding-top: 20px;
+}
+
+.plan-details p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #b3b3b3;
+    font-size: 0.9rem;
+}
+
+.plan-details b {
+    color: white;
+    font-size: 1rem;
+}
+
+.plans-actions {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.plans-disclaimer {
+    color: #737373;
+    font-size: 0.8125rem;
+    margin-bottom: 30px;
+}
+
+.plans-submit {
+    background-color: var(--netflix-red);
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 440px;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+.plans-submit:hover {
+    background-color: var(--netflix-red-hover);
+}
+
+@media (max-width: 768px) {
+    .plan-card {
+        min-width: 100%;
+    }
+}

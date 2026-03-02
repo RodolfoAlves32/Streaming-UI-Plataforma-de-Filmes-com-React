@@ -1,0 +1,47 @@
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    height: 70px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.nav-black {
+    background-color: #141414;
+}
+
+.nav-logo {
+    color: var(--netflix-red);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+}
+
+.nav-contents {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #b3b3b3;
+}
+
+.nav-avatar {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
